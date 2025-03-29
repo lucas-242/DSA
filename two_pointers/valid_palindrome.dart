@@ -19,7 +19,7 @@ class ValidPalindrome {
   }
 
   // runtime type -> 1ms
-  bool call2(String s) {
+  bool solution2(String s) {
     if (s.isEmpty) return true;
 
     int left = 0;

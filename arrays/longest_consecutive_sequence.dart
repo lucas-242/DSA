@@ -1,5 +1,8 @@
 import 'dart:math';
 
+/// Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+///
+/// https://leetcode.com/problems/longest-consecutive-sequence/
 class LongestConsecutiveSequence {
   int call(List<int> nums) {
     final numSet = Set<int>.from(nums);

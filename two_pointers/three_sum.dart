@@ -4,6 +4,8 @@
 /// Notice that the solution set must not contain duplicate triplets.
 ///
 /// 3 <= nums.length <= 3000
+///
+/// https://leetcode.com/problems/3sum/
 class ThreeSum {
   List<List<int>> call(List<int> nums) {
     final response = <List<int>>[];

@@ -4,6 +4,8 @@
 ///
 /// Return the indices of the two numbers, index1 and index2,
 /// added by one as an integer array [index1, index2] of length 2.
+///
+/// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 class TwoSumII {
   List<int> call(List<int> numbers, int target) {
     final n = numbers.length;

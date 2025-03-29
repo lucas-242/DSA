@@ -1,5 +1,7 @@
-/// Given two strings s and t, write a function to determine if t is an anagram of s.
-class IsAnagram {
+/// Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+///
+/// https://leetcode.com/problems/valid-anagram/
+class ValidAnagram {
   bool call(String s, String t) {
     if (s.length != t.length) return false;
 
