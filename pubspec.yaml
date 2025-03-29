@@ -1,0 +1,10 @@
+name: DSA
+description: A repository for data structures and algorithms.
+
+version: 1.0.0
+
+environment:
+  sdk: '^3.6.0'
+
+dev_dependencies:
+  test: ^1.21.0
