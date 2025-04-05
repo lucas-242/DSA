@@ -1,7 +1,7 @@
 import 'package:DSA/two_pointers/three_sum.dart';
 import 'package:test/test.dart';
 
-void main(List<String> args) {
+void main() {
   group('3Sum', () {
     test('[-1,0,1,2,-1,-4]', () {
       final response = ThreeSum().call([-1, 0, 1, 2, -1, -4]);
