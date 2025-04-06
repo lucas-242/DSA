@@ -30,6 +30,7 @@ class ThreeSum {
           response.add([nums[i], nums[left], nums[right]]);
           left++;
 
+          // Check scenarios where we have equal numbers: [0,0,0,0]
           while (nums[left] == nums[left - 1] && left < right) {
             left++;
           }

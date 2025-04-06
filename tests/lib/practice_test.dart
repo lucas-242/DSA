@@ -1,7 +1,7 @@
 import 'package:DSA/practice.dart';
 import 'package:test/test.dart';
 
-void main(List<String> args) {
+void main() {
   group('Practice', () {
     test('[-1,0,1,2,-1,-4]', () {
       final response = Practice().call([-1, 0, 1, 2, -1, -4]);
@@ -18,6 +18,13 @@ void main(List<String> args) {
 
     test('[0,0,0]', () {
       final response = Practice().call([0, 0, 0]);
+      expect(response, [
+        [0, 0, 0]
+      ]);
+    });
+
+    test('[0,0,0,0]', () {
+      final response = Practice().call([0, 0, 0, 0]);
       expect(response, [
         [0, 0, 0]
       ]);

@@ -22,5 +22,12 @@ void main() {
         [0, 0, 0]
       ]);
     });
+
+    test('[0,0,0,0]', () {
+      final response = ThreeSum().call([0, 0, 0, 0]);
+      expect(response, [
+        [0, 0, 0]
+      ]);
+    });
   });
 }

@@ -1,9 +1,12 @@
 class Practice {
   List<List<int>> call(List<int> nums) {
-    final response = List<List<int>>.empty(growable: true);
+    final response = <List<int>>[];
+
     nums.sort();
 
-    //achar dois números que somados são iguais a diff
+    //     i  k     j
+    //[-4,-1,-1,0,1,2]
+
     for (int i = 0; i < nums.length; i++) {
       if (i > 0 && nums[i] == nums[i - 1]) {
         continue;
@@ -15,15 +18,17 @@ class Practice {
       while (k < j) {
         final sum = nums[i] + nums[k] + nums[j];
 
-        if (sum > 0) {
+        if (sum > 0)
           j--;
-        } else if (sum < 0) {
+        else if (sum < 0)
           k++;
-        } else {
+        else {
           response.add([nums[i], nums[k], nums[j]]);
-
           k++;
-          j--;
+
+          while (nums[k] == nums[k - 1] && k < j) {
+            k++;
+          }
         }
       }
     }
